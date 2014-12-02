@@ -1,0 +1,25 @@
+{
+  "name": "NPS",
+  "version": "0.0.0",
+  "homepage": "https://github.com/nodejs-web/NPS",
+  "authors": [
+    "jameslong <james.long169@gmail.com>"
+  ],
+  "keywords": [
+    "nps",
+    "node.js"
+  ],
+  "license": "MIT",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery": "~2.1.1",
+    "bootstrap":"~3.3.0"
+  }
+}
