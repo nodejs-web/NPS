@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <% include ../header.ejs %>
+</head>
+<body>
+<% include ../navbar.ejs %>
+<div class="page-header">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-8">
+                <form  action="/source/search" method="get">
+                    <div class="input-group input-group-lg">
+                        <input type="text" id="keyword" name="keyword" class="form-control" placeholder="有问题，就搜吧！ ">
+            <span class="input-group-btn">
+                <button class="btn btn-success" id="searchBtn"  type="button">搜索</button>
+            </span>
+                    </div>
+                </form>
+            </div>
+            <div class="col-sm-4">
+                <button class="btn btn-success" id="searchBtn"  type="button">搜索</button>
+            </div>
+        </div>
+    </div>
+
+</div>
+<div class="bs-docs-featurette">
+    <div class="container">
+        <p class="lead">热门的社区模块，实用的代码示例，全面的问题汇总，丰富的参考资料，全方位助力Node.js开发。</p>
+
+        <hr class="half-rule">
+
+        <div class="row">
+            <div class="col-sm-4">
+                <img src="/images/npm.jpg" alt="Sass and Less support" class="img-responsive">
+                <h3>社区模块</h3>
+                <p>Node.js的模块有赖于<a href="http://www.npmjs.org">NPM</a>,为Node.js提供了大量的优质的模块，使得Node.js开发更快，更高效，然而模块数量客观，品质参差不齐，也为开者增添了不少的烦恼，在此做了一些整理，汇聚了社区中人气比较高，使用率较高的模块，并提供中文文档以及示例代码</p>
+            </div>
+            <div class="col-sm-4">
+                <img src="/images/faq.jpg" alt="Responsive across devices" class="img-responsive">
+                <h3>常见问题</h3>
+                <p>Node.js还很年轻，API的调整，版本的变化导致部分代码无法正常运行，开发者在开发过程中会遇到各种各样的问题，而且有非常多的问题是普遍遇到的，小助手为大家整理了一些常见的问题，您在开发过程中遇到问题，解决不了也可以将问题发布出来，小助手或者更多的朋友会帮您解决。</p>
+            </div>
+            <div class="col-sm-4">
+                <img src="/images/source.jpg" alt="Components" class="img-responsive">
+                <h3>参考资料</h3>
+                <p>一直以来，我们都要面对的一件事情就是技术资料缺乏，造成技术推广缓慢，发展滞后，学习困难，开发可靠性差，Node.js社区存在着许多活跃分子，想方设法，翻译外文图书，录制视频，不定期举办专题交流等，带动了社区的发展，促进了Node.js在中国的发展，更多的人需要这些资料，以了解技术发展的状况，方向。</p>
+            </div>
+        </div>
+    </div>
+    <hr class="half-rule">
+
+    <p class="lead">Node小助手是完全开源的。它的代码托管、开发、维护都依赖 GitHub 平台。</p>
+    <a href="https://github.com/twbs/bootstrap" class="btn btn-outline btn-lg">查看 GitHub 项目主页</a>
+</div>
+</div>
+
+<% include ../footer.ejs %>
+</body>
+
+</html>

@@ -1,5 +1,4 @@
 <!-- 意见反馈 -->
-<!-- 用户登录 -->
 <!DOCTYPE html>
 <html>
 <head>
@@ -9,8 +8,34 @@
 <% include navbar.ejs %>
 <main class="bs-docs-masthead" id="content" role="main">
     <div class="container">
-        <span class="bs-docs-booticon bs-docs-booticon-lg bs-docs-booticon-outline">小助手</span>
-        <p class="lead">Node.js 小助手，时刻在您身边 。它， 比我更懂你 ！</p>
+        <form class="form form-horizontal" role="form" action="/feedback/" method="post">
+            <div class="page-header">
+                <p class="lead">意见反馈</p>
+            </div>
+            <div class="form-group">
+                <label for="email" class="col-sm-2 control-label">电子邮箱</label>
+                <div class="col-sm-8">
+                    <input type="email" class="form-control" id="email" placeholder="您的电子邮箱，方便反馈">
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="title" class="col-sm-2 control-label">意见标题</label>
+                <div class="col-sm-8">
+                    <input type="text" class="form-control" name="title" id="title" placeholder="意见标题">
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="description" class="col-sm-2 control-label">详细描述</label>
+                <div class="col-sm-8">
+                    <textarea class="form-control" name="description" id="description" rows="10" placeholder="请在此描述您要反馈的问题或者建议"></textarea>
+                </div>
+            </div>
+            <div class="form-group">
+                <div class="col-sm-offset-2 col-sm-10">
+                    <button type="submit" class="btn btn-block btn-success">提交反馈</button>
+                </div>
+            </div>
+        </form>
     </div>
 </main>
 </body>

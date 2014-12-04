@@ -1,0 +1,72 @@
+<!-- 用户登录 -->
+<!DOCTYPE html>
+<html>
+<head>
+    <% include header.ejs %>
+</head>
+<body>
+<% include navbar.ejs %>
+<main class="bs-docs-masthead" id="content" role="main">
+    <div class="container">
+        <form class="form form-horizontal" role="form" action="/forget/" method="post">
+            <div class="page-header">
+                <p class="lead">重置密码</p>
+            </div>
+            <div class="form-group">
+                <label for="email" class="col-sm-2 control-label">电子邮箱</label>
+                <div class="col-sm-6">
+                    <input type="email" class="form-control" id="email" placeholder="填写注册邮箱">
+                </div>
+                <div class="col-sm-4">
+                    <p class="form-control-static">请填写您注册使用的邮箱地址</p>
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="inputPassword3" class="col-sm-2 control-label">重置密码</label>
+                <div class="col-sm-6">
+                    <input type="password" class="form-control" id="password" placeholder="填写登录密码">
+                </div>
+                <div class="col-sm-4">
+                    <p class="form-control-static">请重置您的登录密码</p>
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="inputPassword3" class="col-sm-2 control-label">确认密码</label>
+                <div class="col-sm-6">
+                    <input type="password" class="form-control" id="password" placeholder="填写登录密码">
+                </div>
+                <div class="col-sm-4">
+                    <p class="form-control-static">请再次确认登录密码</p>
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="code" class="col-sm-2 control-label">重置代码</label>
+                <div class="col-sm-3">
+                    <input type="text" class="form-control" id="code" name="code" placeholder="请填写邮件中的重置代码">
+                </div>
+                <div class="col-sm-3">
+                    <button type="button" class="btn btn-primary">没有收到邮件？重新请求</button>
+                </div>
+                <div class="col-sm-4">
+                    <p class="form-control-static">请填写邮箱中的验证码</p>
+                </div>
+            </div>
+            <div class="form-group">
+                <label class="col-sm-2 control-label"></label>
+                <div class="col-sm-10">
+                    <div class="checkbox">
+                        <label><input type="checkbox">同意<a href="/forget/">使用协议</a></label>
+                        <span class="form-control-static">, 勾选此项，表明您同意本网站的用户使用协议</span>
+                    </div>
+                </div>
+            </div>
+            <div class="form-group">
+                <div class="col-sm-offset-2 col-sm-10">
+                    <button type="submit" class="btn btn-block btn-danger">确认重置新密码</button>
+                </div>
+            </div>
+        </form>
+    </div> <!-- /container -->
+</main>
+</body>
+</html>
