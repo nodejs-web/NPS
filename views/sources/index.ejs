@@ -9,27 +9,17 @@
 <div class="page-header">
     <div class="container">
         <div class="row">
-            <div class="col-sm-8">
+            <div class="col-sm-6">
                 <form  action="/source/search" method="get">
                     <div class="input-group">
+                        <input id="" type="text" class="form-control">
                         <div class="input-group-btn">
-                            <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">&nbsp; 全 部 &nbsp;<span class="caret"></span></button>
-                            <ul class="dropdown-menu" role="menu">
-                                <li><a href="#">&nbsp; 视频 &nbsp;</a></li>
-                                <li><a href="#">&nbsp; 图书 &nbsp;</a></li>
-                                <li class="divider"></li>
-                                <li><a href="#">&nbsp; 博客 &nbsp;</a></li>
-                                <li><a href="#">&nbsp; 文章 &nbsp;</a></li>
-                                <li><a href="#">&nbsp; 问答 &nbsp;</a></li>
-                            </ul>
+                            <button type="button" class="btn btn-blue"><span class="glyphicon glyphicon-search"></span> &nbsp; 搜索 &nbsp;</button>
                         </div><!-- /btn-group -->
-                        <input type="text" class="form-control">
                     </div><!-- /input-group -->
                 </form>
             </div>
-            <div class="col-sm-4">
-                <button class="btn btn-success" id="searchBtn"  type="button">发表你</button>
-            </div>
+            <div class="col-sm-6"></div>
         </div>
     </div>
 
@@ -37,94 +27,17 @@
 
 <div class="container projects">
     <div class="row">
+        <div class="col-lg-10">
 
-        <!-- 模块列表 -->
-        <!-- 提交模块文档 title, picture, address, description, version, author, homepage-->
-        <div class="col-sm-6 col-md-4 col-lg-3 ">
-            <div class="thumbnail">
-                <a href="" title="Bootstrap 编码规范" target="_blank" onclick=""><img class="lazy" src="http://static.bootcss.com/www/assets/img/null.png?v2" width="300" height="150" data-src="http://static.bootcss.com/www/assets/img/codeguide.png" alt="Headroom.js"></a>
-                <div class="caption">
-                    <h3>
-                        <a href="http://codeguide.bootcss.com" title="Bootstrap 编码规范：编写灵活、稳定、高质量的 HTML 和 CSS 代码的规范。" target="_blank" onclick="_hmt.push(['_trackEvent', 'tile', 'click', 'codeguide'])">Bootstrap 编码规范<br><small>by @mdo</small></a>
-                    </h3>
-                    <p>
-                        Bootstrap 编码规范：编写灵活、稳定、高质量的 HTML 和 CSS 代码的规范。
-                    </p>
-                </div>
-            </div>
         </div>
-
-        <div class="col-sm-6 col-md-4 col-lg-3 ">
-            <div class="thumbnail">
-                <a href="http://www.gruntjs.net" title="Grunt是基于Node.js的项目构建工具。" target="_blank" onclick="_hmt.push(['_trackEvent', 'tile', 'click', 'grunt'])"><img class="lazy" src="http://static.bootcss.com/www/assets/img/null.png?v2" width="300" height="150" data-src="http://static.bootcss.com/www/assets/img/gruntjs.png" alt="Grunt"></a>
-                <div class="caption">
-                    <h3>
-                        <a href="http://www.gruntjs.net" title="Grunt是基于Node.js的项目构建工具。" target="_blank" onclick="_hmt.push(['_trackEvent', 'tile', 'click', 'grunt'])">Grunt<br><small>项目构建工具</small></a>
-                    </h3>
-                    <p>
-                        Grunt是基于Node.js的项目构建工具。它可以自动运行你所设定的任务。Grunt拥有数量庞大的插件，几乎任何你所要做的事情都可以用Grunt实现。
-                    </p>
-                </div>
-            </div>
+        <div class="col-lg-2">
+            <ul class="nav nav-pills nav-stacked" role="tablist" style="max-width: 150px;">
+                <li role="presentation" class="active"><a href="#">示例代码</a></li>
+                <li role="presentation"><a href="#">视频系列</a></li>
+                <li role="presentation"><a href="#">电子书籍</a></li>
+                <li role="presentation"><a href="#">专题博文</a></li>
+            </ul>
         </div>
-
-        <div class="col-sm-6 col-md-4 col-md-4 col-lg-3 ">
-            <div class="thumbnail">
-                <a href="/p/stickup/" title="stickUp能让页面目标元素“固定”在浏览器窗口的顶部" target="_blank" onclick="_hmt.push(['_trackEvent', 'tile', 'click', 'stickup'])"><img class="lazy" src="http://static.bootcss.com/www/assets/img/null.png?v2" width="300" height="150" data-src="http://static.bootcss.com/www/assets/img/stickup.png" alt="stickUp"></a>
-                <div class="caption">
-                    <h3>
-                        <a href="/p/stickup/" title="stickUp能让页面目标元素“固定”在浏览器窗口的顶部" target="_blank" onclick="_hmt.push(['_trackEvent', 'tile', 'click', 'stickup'])">stickUp<br><small>让页面元素“固定”位置</small></a>
-                    </h3>
-                    <p>
-                        stickUp能让页面目标元素“固定”在浏览器窗口的顶部，即便页面在滚动，目标元素仍然能出现在设定的位置。
-                    </p>
-                </div>
-            </div>
-        </div>
-
-        <div class="col-sm-6 col-md-4 col-lg-3 ">
-            <div class="thumbnail">
-                <a href="/p/responsive-nav.js/" title="响应式导航" target="_blank" onclick="_hmt.push(['_trackEvent', 'tile', 'click', 'navjs'])"><img class="lazy" src="http://static.bootcss.com/www/assets/img/null.png?v2" width="300" height="150" data-src="http://static.bootcss.com/www/assets/img/responsive-nav.js.png" alt="Responsive Nav"></a>
-                <div class="caption">
-                    <h3>
-                        <a href="/p/responsive-nav.js/" title="响应式导航" target="_blank" onclick="_hmt.push(['_trackEvent', 'tile', 'click', 'navjs'])">Responsive Nav<br><small>响应式导航</small></a>
-                    </h3>
-                    <p>
-                        响应式导航（Responsive Nav）是一个很小的JS插件，压缩之后仅有1.7KB，能帮你创建针对小屏幕的可切换式导航
-                    </p>
-                </div>
-            </div>
-        </div>
-
-
-        <div class="col-sm-6 col-md-4 col-lg-3 ">
-            <div class="thumbnail">
-                <a href="/p/unslider/" title="Unslider" target="_blank" onclick="_hmt.push(['_trackEvent', 'tile', 'click', 'unslider'])"><img class="lazy" src="http://static.bootcss.com/www/assets/img/null.png?v2" width="300" height="150" data-src="http://static.bootcss.com/www/assets/img/unslider.png" alt="Unslider"></a>
-                <div class="caption">
-                    <h3>
-                        <a href="/p/unslider/" title="Unslider" target="_blank" onclick="_hmt.push(['_trackEvent', 'tile', 'click', 'unslider'])">Unslider<br><small>jQuery轮播插件</small></a>
-                    </h3>
-                    <p>
-                        Unslider &mdash; 一个超小的 jQuery 轮播（slider） 插件。支持主流浏览器、键盘导航、自动调整高度和响应式布局。
-                    </p>
-                </div>
-            </div>
-        </div>
-
-        <div class="col-sm-6 col-md-4 col-lg-3 ">
-            <div class="thumbnail">
-                <a href="/p/flat-ui/" title="Flat UI" target="_blank" onclick="_hmt.push(['_trackEvent', 'tile', 'click', 'flatui'])"><img class="lazy" src="http://static.bootcss.com/www/assets/img/null.png?v2" width="300" height="150" data-src="http://static.bootcss.com/www/assets/img/flat-ui.png" alt="Flat UI"></a>
-                <div class="caption">
-                    <h3>
-                        <a href="/p/flat-ui/" title="Flat UI" target="_blank" onclick="_hmt.push(['_trackEvent', 'tile', 'click', 'flatui'])">Flat UI<br><small>Metro风格的Bootstrap</small></a>
-                    </h3>
-                    <p>
-                        Flat UI是基于Bootstrap做的Metro化改造，由<a href="http://designmodo.com/">Designmodo</a>提供。Flat UI包含了很多Bootstrap提供的组件，但是外观更加漂亮。在此强烈推荐！
-                    </p>
-                </div>
-            </div>
-        </div>
-
     </div>
 </div><!-- /.container -->
 

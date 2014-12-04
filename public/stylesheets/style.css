@@ -1,8 +1,40 @@
-/*body {*/
-  /*padding: 50px;*/
-  /*font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;*/
-/*}*/
+body {
+  background-color: rgba(238, 239, 238, 0.98);
+}
 
-a {
-  color: #00B7FF;
+.navbar-header>a {
+  color: #337ab7;
+}
+
+.bs-docs-nav{
+  background-color:#337ab7;
+}
+
+.bs-docs-nav .navbar-nav>li>a{
+  color:#ffffff;
+  font-size: 16px;
+
+}
+
+.bs-docs-nav .navbar-nav>li>a:hover, .bs-docs-nav .navbar-nav>.active>a:hover, .bs-docs-nav .navbar-nav>.active>a{
+  background-color: #3165a0;
+  color:white;
+}
+
+.list-title{
+  background-color:#337ab7;
+  color:white;
+}
+
+.btn-blue{
+  background-color:#337ab7;
+  color:white;
+}
+
+.btn-blue:hover{
+  color:white;
+}
+
+.bs-docs-nav .navbar-brand{
+  color:white;
 }

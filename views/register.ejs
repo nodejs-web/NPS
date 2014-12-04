@@ -1,5 +1,4 @@
 <!-- 用户注册 -->
-<!-- 用户登录 -->
 <!DOCTYPE html>
 <html>
 <head>
@@ -15,17 +14,44 @@
                 <p class="lead">用户注册</p>
             </div>
             <div class="form-group">
-                <a class="btn btn-info btn-lg" href="https://github.com/login/oauth/authorize?client_id=70d60893e7ec2ee42e40&scope=user:email&redirect_uri=https://elasticbox.com/services/security/github_callback?accept_terms=true">
-                    <span class="sso sso-github"></span><span>使用Github账号</span></a>
-            </div>
+                <div class="row">
+                    <div class="col-sm-6 col-md-4 col-md-4 col-lg-4 ">
+                        <div class="thumbnail">
+                            <a href="https://github.com/login/oauth/authorize?client_id=70d60893e7ec2ee42e40&scope=user:email&redirect_uri=https://elasticbox.com/services/security/github_callback?accept_terms=true" title="使用github账号注册"><img class="lazy" src="/images/asset/sso-github-lg.png" width="250" height="120" data-src="/images/asset/sso-github-lg.png" alt="github logo"></a>
+                        </div>
+                        <div class="title">
+                            <h2>github</h2>
+                        </div>
+                    </div>
 
-            <div class="form-group">
-                <a class="btn btn-primary btn-lg" id="sign-up" href="/own/"><span class="sso sso-email"></span><span>使用个人邮箱</span></a>
-            </div>
+                    <div class="col-sm-6 col-md-4 col-md-4 col-lg-4 ">
+                        <div class="thumbnail">
+                            <a href="/own/" title="使用自己的邮箱注册"><img class="lazy" src="/images/asset/sso-google-lg.png" width="250" height="120" data-src="/images/asset/sso-google-lg.png" alt="email logo"></a>
+                        </div>
+                        <div class="title">
+                            <h2>email</h2>
+                        </div>
+                    </div>
 
-            <div class="form-group">
-                <a class="btn btn-success btn-lg" href="https://accounts.google.com/o/oauth2/auth?client_id=726336950247-p6172q2aojfuntnp8e0rocg45c19ss4b.apps.googleusercontent.com&response_type=code&scope=profile+email&redirect_uri=https%3A//elasticbox.com/services/security/google_callback%3Faccept_terms%3Dtrue&approval_prompt=auto">
-                    <span class="sso sso-google"></span><span>使用google账号</span></a>
+                    <div class="col-sm-6 col-md-4 col-md-4 col-lg-4 ">
+                        <div class="thumbnail">
+                            <a href="https://accounts.google.com/o/oauth2/auth?client_id=726336950247-p6172q2aojfuntnp8e0rocg45c19ss4b.apps.googleusercontent.com&response_type=code&scope=profile+email&redirect_uri=https%3A//elasticbox.com/services/security/google_callback%3Faccept_terms%3Dtrue&approval_prompt=auto" title="使用google账号注册"><img class="lazy" style="padding-top:60px;padding-bottom:15px;" src="/images/asset/google.png" width="250" height="120" data-src="/images/asset/google.png" alt="google logo"></a>
+                        </div>
+                        <div class="title">
+                            <h2>google</h2>
+                        </div>
+                    </div>
+                <!--<div class="row">-->
+                    <!--<div class="col-sm-4">-->
+                        <!--<a class="btn btn-info btn-lg" "><span class="sso sso-github"></span><span>使用Github账号</span></a>-->
+                    <!--</div>-->
+                    <!--<div class="col-sm-4">-->
+                        <!--<a class="btn btn-success btn-lg" href=""><span class="sso sso-google"></span><span>使用google账号</span></a>-->
+                    <!--</div>-->
+                    <!--<div class="col-sm-4">-->
+                        <!--<a class="btn btn-primary btn-lg" id="sign-up" href="/own/"><span class="sso sso-email"></span><span>使用个人邮箱</span></a>-->
+                    <!--</div>-->
+                <!--</div>-->
             </div>
     </form>
     </div>
